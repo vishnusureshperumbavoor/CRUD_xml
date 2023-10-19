@@ -17,6 +17,7 @@ int readXML() {
     XMLElement* pRootElement = doc.RootElement();
 
     // Print out the Table Header
+    cout << "---------------------- Reading data from " << path << " --------------------------------------" << endl << endl;
     cout << '|' << setw(7) << "Acc No." << '|' << setw(12) << "Account Type" << '|' << setw(15) << "Customer Name" << '|' << setw(10) << "Balance" << '|' << setw(12) << "Open Date" <<
         endl << endl;
 
