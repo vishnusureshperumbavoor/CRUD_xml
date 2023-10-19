@@ -8,6 +8,7 @@ using namespace std;
 int main() {
     if (checkConnection) {
         readXML();
+        writeXML();
     }
     else {
         cout << "connection failed" << endl;
