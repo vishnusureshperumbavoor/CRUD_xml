@@ -1,25 +1,17 @@
 #include <iostream>
 #include "tinyxml2.h"
 #include "Header.h"
+using namespace std;
 
 using namespace tinyxml2;
 
 int checkConnection() {
     XMLDocument doc;
-    doc.LoadFile("XMLFile.xml");
-
-    if (doc.Error()) {
-        std::cout << "Error loading the XML file." << std::endl;
+    const char* path = "BankRecords.xml";
+    if (doc.LoadFile(path) == XML_SUCCESS) {
+        cout << "XML file loaded successfully" << endl;
         return 1;
     }
-
-    XMLElement* root = doc.FirstChildElement("RootElement");
-    if (root) {
-        const char* text = root->GetText();
-        if (text) {
-            std::cout << "Content of RootElement: " << text << std::endl;
-        }
-    }
-
+    cout << "file loading error" << endl;
     return 0;
 }

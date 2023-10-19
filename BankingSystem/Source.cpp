@@ -6,9 +6,10 @@ using namespace tinyxml2;
 using namespace std;
 
 int main() {
-    if (checkConnection) {
+    if (checkConnection()) {
         readXML();
         writeXML();
+        readXML();
     }
     else {
         cout << "connection failed" << endl;

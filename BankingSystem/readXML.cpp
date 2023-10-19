@@ -6,18 +6,16 @@ using namespace std;
 using namespace tinyxml2;
 
 int readXML() {
+    cout << endl << "------------------------ Reading from XML file ------------------------" << endl << endl;
     XMLDocument doc;
-    const char* path = "XMLFile.xml";
+    const char* path = "BankRecords.xml";
     char amountText[100];
-
-    cout << "Successfully connected to " << path << endl << endl;
     // Load the XML file into the Doc instance
     doc.LoadFile(path);
     // Get root Element
     XMLElement* pRootElement = doc.RootElement();
 
     // Print out the Table Header
-    cout << "---------------------- Reading data from " << path << " --------------------------------------" << endl << endl;
     cout << '|' << setw(7) << "Acc No." << '|' << setw(12) << "Account Type" << '|' << setw(15) << "Customer Name" << '|' << setw(10) << "Balance" << '|' << setw(12) << "Open Date" <<
         endl << endl;
 

@@ -5,7 +5,7 @@ using namespace std;
 
 int writeXML() {
 	XMLDocument doc;
-	const char* path = "XMLFile.xml";
+	const char* path = "BankRecords.xml";
 	char accountNumberChar[100]{};
 	char typeChar[100]{};
 
@@ -62,10 +62,10 @@ int writeXML() {
 	pRoot -> InsertEndChild(pElement);
 
 	//Save the changes into the XML file
-	if (doc.SaveFile(path) != XML_SUCCESS) {
-		cout << "file saved successfully" << endl;
+	if (doc.SaveFile(path) == XML_SUCCESS) {
+		cout << "Data added to XML file" << endl;
 		return 1;
 	}
-	cout << "file save error" << endl;
+	cout << "Data adding to XML file failed" << endl;
 	return 0;
 }
