@@ -129,6 +129,7 @@
   <ItemGroup>
     <ClCompile Include="BankingSystem.cpp" />
     <ClCompile Include="connectionCheck.cpp" />
+    <ClCompile Include="readXML.cpp" />
     <ClCompile Include="tinyxml2.cpp" />
   </ItemGroup>
   <ItemGroup>
