@@ -1,4 +1,4 @@
-# Create and Read operations on XML file
+# CRUD XML
 
-Create an XML File called BankRecords.xml
+Create and read operation on an XML file using Visual C++
 
