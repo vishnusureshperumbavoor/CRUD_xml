@@ -1,4 +1,6 @@
 # CRUD XML
 
-Create and read operation on an XML file using Visual C++
+* Uses visual cpp
+* Read data from an XML file
+* Adding input data to XML file
 
